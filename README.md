@@ -11,7 +11,7 @@ Para cargar y utilizar el clasificador de textos:
    # Cargar el clasificador desde el archivo
    clasificador = joblib.load('clasificador_texto.pkl')
 
-#Utiliza el clasificador
-oracion_prueba = 'Texto que deseas clasificar'
-resultado = clasificador.classify(oracion_prueba)
-print("Resultado de la clasificación:", resultado)
+   #Utiliza el clasificador
+   oracion_prueba = 'Texto que deseas clasificar'
+   resultado = clasificador.classify(oracion_prueba)
+   print("Resultado de la clasificación:", resultado)
