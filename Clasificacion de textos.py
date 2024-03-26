@@ -88,6 +88,5 @@ clasificacion_negativa = resultado_negativo.max()
 print("Resultado de la clasificación para la oración positiva:", clasificacion_positiva)
 print("Resultado de la clasificación para la oración negativa:", clasificacion_negativa)
 
-nombreFile = './models/NaiveBClassifier.joblib.pkl'
-rtn = joblib.dump(NaiveBClassifier, nombreFile, compress=9)
-
+# Guardar el clasificador en un archivo
+joblib.dump(NaiveBClassifier, 'clasificador_texto.pkl')
