@@ -1,17 +1,46 @@
 # NLP_study
-Clasificador de textos
+Clasificador de textos.
+Este es un proyecto de clasificación de textos que utiliza el algoritmo de clasificación Naive Bayes implementado con la biblioteca NLTK en Python. El clasificador puede etiquetar automáticamente las oraciones como positivas o negativas según su contenido.
 
-Para cargar y utilizar el clasificador de textos:
+El archivo clasificador_textos cuenta con dos frases de prueba (neg/pos), mientras que clasificador_texto_libre deja vía libre para clasificar textos. Este código es el que se ve más adelante para cargar el clasificador utilizando la biblioteca joblib.
 
-1. Descarga el archivo 'clasificador_texto.pkl'.
-2. En tu código de Python, carga el clasificador utilizando la biblioteca joblib:
-   ```python
-   import joblib
+1. Instrucciones de uso
+   1.1 Requisitos previos
+Asegúrate de tener instaladas las siguientes bibliotecas de Python:
+- NLTK (Natural Language Toolkit)
+- joblib
 
-   # Cargar el clasificador desde el archivo
-   clasificador = joblib.load('clasificador_texto.pkl')
+Puedes instalar NLTK ejecutando el siguiente comando:
 
-   #Utiliza el clasificador
-   oracion_prueba = 'Texto que deseas clasificar'
-   resultado = clasificador.classify(oracion_prueba)
-   print("Resultado de la clasificación:", resultado)
+pip install nltk
+
+Y joblib con:
+
+pip install joblib
+
+Además, necesitarás descargar los datos adicionales de NLTK ejecutando el siguiente script de Python:
+
+import nltk
+nltk.download('punkt')
+
+   1.2 Cómo utilizar el clasificador
+1. Descarga el archivo 'clasificador_texto.pkl' desde este repositorio.
+2.Coloca el archivo 'clasificador_texto.pkl' en el mismo directorio que tu script de Python desde el cual deseas cargarlo.
+3. En tu script de Python, carga el clasificador utilizando la biblioteca joblib:
+
+import joblib
+from nltk.tokenize import word_tokenize
+
+# Cargar el clasificador desde el archivo
+clasificador = joblib.load('clasificador_texto_libre.pkl')
+
+# Tokenizar la oración de prueba
+oracion_prueba = 'Texto que deseas clasificar'
+palabras_oracion = word_tokenize(oracion_prueba.lower())
+
+# Crear el conjunto de características
+caracteristicas_oracion = {palabra: True for palabra in palabras_oracion}
+
+# Utilizar el clasificador
+resultado = clasificador.classify(caracteristicas_oracion)
+print("Resultado de la clasificación:", resultado)
