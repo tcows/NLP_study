@@ -72,5 +72,12 @@ clasificacion = NaiveBClassifier.classify(array_oracion)
 # Imprimir el resultado de la clasificación
 print("Resultado de la clasificación para la oración ingresada:", clasificacion)
 
+# Guardar el clasificador en un archivo
+joblib.dump(NaiveBClassifier, 'clasificador_texto_libre.pkl')
+
+
+# Imprimir el resultado de la clasificación
+print("Resultado de la clasificación para la oración ingresada:", clasificacion)
+
 nombreFile = './models/NaiveBClassifier.joblib.pkl'
 rtn = joblib.dump(NaiveBClassifier, nombreFile, compress=9)
