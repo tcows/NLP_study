@@ -1,11 +1,12 @@
 # NLP_study
 Clasificador de textos.
+
 Este es un proyecto de clasificación de textos que utiliza el algoritmo de clasificación Naive Bayes implementado con la biblioteca NLTK en Python. El clasificador puede etiquetar automáticamente las oraciones como positivas o negativas según su contenido.
 
 El archivo clasificador_textos cuenta con dos frases de prueba (neg/pos), mientras que clasificador_texto_libre deja vía libre para clasificar textos. Este código es el que se ve más adelante para cargar el clasificador utilizando la biblioteca joblib.
 
-1. Instrucciones de uso
-   1.1 Requisitos previos
+# Instrucciones de uso
+# Requisitos previos
 Asegúrate de tener instaladas las siguientes bibliotecas de Python:
 - NLTK (Natural Language Toolkit)
 - joblib
@@ -23,7 +24,7 @@ Además, necesitarás descargar los datos adicionales de NLTK ejecutando el sigu
 import nltk
 nltk.download('punkt')
 
-   1.2 Cómo utilizar el clasificador
+# Cómo utilizar el clasificador
 1. Descarga el archivo 'clasificador_texto.pkl' desde este repositorio.
 2.Coloca el archivo 'clasificador_texto.pkl' en el mismo directorio que tu script de Python desde el cual deseas cargarlo.
 3. En tu script de Python, carga el clasificador utilizando la biblioteca joblib:
