@@ -26,7 +26,7 @@ nltk.download('punkt')
 
 # Cómo utilizar el clasificador
 1. Descarga el archivo 'clasificador_texto.pkl' desde este repositorio.
-2.Coloca el archivo 'clasificador_texto.pkl' en el mismo directorio que tu script de Python desde el cual deseas cargarlo.
+2. Coloca el archivo 'clasificador_texto.pkl' en el mismo directorio que tu script de Python desde el cual deseas cargarlo.
 3. En tu script de Python, carga el clasificador utilizando la biblioteca joblib:
 
 import joblib
