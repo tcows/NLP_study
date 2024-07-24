@@ -24,7 +24,9 @@ Below is a list of the courses from which the exercises come:
    - **Project 11: Neural Network from Scratch in TensorFlow**
    - **Project 12: Python NLTK for Beginners: Customer Satisfaction Analysis**
    - **Project 13: Transfer Learning for NLP with TensorFlow Hub**
-
+   - **Project 14: <a href=https://github.com/tcows/nlp-simplebot>Simple Bot</a>**
+   - **Project 15: <a href=https://github.com/tcows/nlp-apibot>Api Bot</a>**
+   - 
      
 2. **Programa especializado: Procesamiento de Lenguaje Natural**
    - **Project 1: Text_classifier**
